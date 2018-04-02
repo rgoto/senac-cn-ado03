@@ -6,7 +6,7 @@
 
 int verificacao (int argc) {
     if (argc >= 2 && argc < 3) return 1;
-    else 
+    else
         return 0;
 }
 
@@ -34,4 +34,26 @@ long double eulerFunctionLDouble (unsigned int n) {
 return result;
 }
 
+void chartFloat (unsigned int n) {
+    float result;
+
+
+    for (int i = 0; i >= n; i++) {
+        result = eulerFunctionFloat(i);
+    }
+}
+
+void chartDouble (unsigned int n) {
+    double result;
+    for (int i = 0; i >= n; i++) {
+        result = eulerFunctionDouble(i);
+    }
+}
+
+void chartLDouble (unsigned int n) {
+    long double result;
+    for (int i = 0; i >= n; i++) {
+        result = eulerFunctionLDouble(i);
+    }
+}
 
